@@ -9,14 +9,16 @@ function writePassword() {
   passwordText.value = password;
  
 }
- 
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
- 
 
+var password = (/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])([a-zA-Z0-9]{8,})$/)
 
 function generatePassword (passwordLength){  
+
+  var passwordLength = ""
 
   var passwordLength = prompt("type the password length");
 
@@ -25,24 +27,29 @@ function generatePassword (passwordLength){
     generatePassword ()
   };
 
-  var specialChar = confirm ("click ok to confirm if you want special characters.")
+  var specialChar = confirm ("click ok to confirm if you want special characters.");
   var upperCase = confirm ("click ok to confirm if you want UPPER case.");
-  var lowerCase = confirm ("click ok to confirm if you want lower case")
-  var numeric = confirm ("click ok to confirm if you want numeric.")
+  var lowerCase = confirm ("click ok to confirm if you want lower case");
+  var numeric = confirm ("click ok to confirm if you want numeric.");
 
 
   if (specialChar) {
-   password= passwordLength + specialChar
+    console.log("special char is ture")
   }
-  if  
-
-
+  if (upperCase) {
+    console.log("uppercase is ture")
+  } 
+  if (lowerCase) {
+      console.log("lowercase is ture")
+  }  
+  if (numeric) {
+    console.log ("numeric is true ")
+  }
+  else 
+  alert("Must Choose one.")
+    return;
+    
     for (var i = 0; i < passwordLength; i++) {
-  var password = Math.floor(Math.random() * charSets); 
+  var password = Math.floor(Math.random() * password); 
     } 
-  
-
-  return ""
-}
-
-
+    
