@@ -32,7 +32,7 @@ function generatePassword (passwordLength){
   var lowerCase = confirm ("click ok to confirm if you want lower case");
   var numeric = confirm ("click ok to confirm if you want numeric.");
 
-
+  
   if (specialChar) {
     console.log("special char is ture")
   }
@@ -45,11 +45,9 @@ function generatePassword (passwordLength){
   if (numeric) {
     console.log ("numeric is true ")
   }
-  else 
-  alert("Must Choose one.")
-    return;
-    
-    for (var i = 0; i < passwordLength; i++) {
-  var password = Math.floor(Math.random() * password); 
-    } 
-    
+  else {
+    alert("Must Choose one.")
+      }
+
+  for (var i = 0; i < passwordLength; i++) {
+  var password = Math.floor(Math.random() * password); }
