@@ -16,7 +16,7 @@ generateBtn.addEventListener("click", writePassword);
 
 var password = (/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])([a-zA-Z0-9]{8,})$/)
 
-function generatePassword (passwordLength){  
+function generatePassword () {
 
   var passwordLength = ""
 
@@ -26,13 +26,13 @@ function generatePassword (passwordLength){
     alert("Password must be between 8-128 characters! ");
     generatePassword ()
   };
-
+ 
   var specialChar = confirm ("click ok to confirm if you want special characters.");
   var upperCase = confirm ("click ok to confirm if you want UPPER case.");
   var lowerCase = confirm ("click ok to confirm if you want lower case");
   var numeric = confirm ("click ok to confirm if you want numeric.");
 
-  
+ 
   if (specialChar) {
     console.log("special char is ture")
   }
@@ -45,9 +45,15 @@ function generatePassword (passwordLength){
   if (numeric) {
     console.log ("numeric is true ")
   }
+  
   else {
-    alert("Must Choose one.")
-      }
+    ``
+  }
+  return ("Generated password will go here")
 
   for (var i = 0; i < passwordLength; i++) {
-  var password = Math.floor(Math.random() * password); }
+  var passwordLength = Math.floor(Math.random() * password); };
+
+  }
+
+
